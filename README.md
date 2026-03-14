@@ -49,11 +49,11 @@ This milestone enhances the traditional IVR system by introducing conversational
 -Conversational dialogue flow integrated with the existing IVR logic
 
 #Technologies Used : 
-Python
-FastAPI
-SpeechRecognition library
-Pyttsx3 for text-to-speech
-Regular Expressions (Regex) for entity extraction
+Python,
+FastAPI,
+SpeechRecognition library.
+Pyttsx3 for text-to-speech,
+Regular Expressions (Regex) for entity extraction.
 
 #Example Conversational Flow
 
