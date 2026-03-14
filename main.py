@@ -1,3 +1,12 @@
+# from fastapi import FastAPI
+# from pydantic import BaseModel
+
+
+# Importing libraries for Milestone 3 modules
+from modules.dialog_manager import generate_response
+from modules.nlu_engine import detect_intent
+from modules.speech_service import listen, speak
+
 # -----------------------------
 # IVR SYSTEM CONFIGURATION
 # -----------------------------
@@ -76,6 +85,24 @@ def handle_menu(user: UserInput):
     else:
         return {"response": "Invalid Option"}
 
+#new endpoint
+
+@app.get("/ivr/voice")
+def voice_interaction():
+
+    user_text = listen()
+
+    intent = detect_intent(user_text)
+
+    response = generate_response(intent)
+
+    speak(response)
+
+    return {
+        "user_input": user_text,
+        "intent": intent,
+        "response": response
+    }
 
 # To Get Output Run :
 # uvicorn main:app --reload
