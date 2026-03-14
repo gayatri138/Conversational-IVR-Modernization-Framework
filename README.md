@@ -65,18 +65,4 @@ System:
 |
 Please provide your 10-digit PNR number.
 
-
-
-
-
-
-
-
-
-
-
-
-
-Please provide your 10-digit PNR number.
-
 This milestone demonstrates how traditional IVR systems can be modernized using conversational AI to enable natural voice interaction instead of only keypad input.
