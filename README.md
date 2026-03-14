@@ -7,8 +7,8 @@ This repository contains documentation related to:
 - Technical Challenges and Compatibility Gaps
 - System Constraints and Modernization Requirements
 
-## Milestone 2 – IVR System Implementation
-This milestone focuses on implementing a basic IVR system using a web-based simulator. The goal was to replicate a traditional IVR workflow similar to the IRCTC customer care system and demonstrate menu-driven interaction using API endpoints.
+## Module 2 – IVR System Implementation
+This focuses on implementing a basic IVR system using a web-based simulator. The goal was to replicate a traditional IVR workflow similar to the IRCTC customer care system and demonstrate menu-driven interaction using API endpoints.
 
 #Features Implemented
 
@@ -33,10 +33,10 @@ Example
 -Complaint Registration
 -Talk to Customer Support
 
-This milestone demonstrates how a traditional menu-driven IVR system works using API-based backend logic.
+This module demonstrates how a traditional menu-driven IVR system works using API-based backend logic.
 
-## Milestone 3 – Conversational AI Integration
-This milestone enhances the traditional IVR system by introducing conversational AI capabilities. Instead of only relying on keypad-based menu selection, the system can now understand natural voice commands from users.
+## Module 3 – Conversational AI Integration
+This enhances the traditional IVR system by introducing conversational AI capabilities. Instead of only relying on keypad-based menu selection, the system can now understand natural voice commands from users.
 
 #Features Implemented
 
@@ -65,4 +65,4 @@ System:
 |
 Please provide your 10-digit PNR number.
 
-This milestone demonstrates how traditional IVR systems can be modernized using conversational AI to enable natural voice interaction instead of only keypad input.
+This module demonstrates how traditional IVR systems can be modernized using conversational AI to enable natural voice interaction instead of only keypad input.
