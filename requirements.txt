@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic (Base Model)
+speechrecognition
+pyaudio
+pyttsx3
+regex
+pytest
+httpx
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IRCTC Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #dbeafe, #f0f9ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-box {
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            width: 350px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #1e3a8a;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        button {
+            width: 95%;
+            padding: 12px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        .error {
+            color: red;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        .demo {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #666;
+            background: #f8fafc;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>IRCTC Smart IVR Login</h2>
+    <p>Please login to continue</p>
+
+    <input type="text" id="username" placeholder="Enter Username">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="login()">Login</button>
+
+    <div class="error" id="errorMsg"></div>
+
+    <div class="demo">
+        Demo Login<br>
+        Username: <b>admin</b><br>
+        Password: <b>1234</b>
+    </div>
+</div>
+
+<script>
+    function login() {
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const errorMsg = document.getElementById("errorMsg");
+
+        if (username === "admin" && password === "1234") {
+            window.location.href = "/ivr-ui";
+        } else {
+            errorMsg.textContent = "Invalid username or password.";
+        }
+    }
+</script>
+
+</body>
+</html>
