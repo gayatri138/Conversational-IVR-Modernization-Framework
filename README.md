@@ -130,3 +130,31 @@ The project was successfully deployed on a free cloud hosting platform (**Render
 👉 **[Open Live IVR Project Here] (https://conversational-irctc-ivr.onrender.com/)**
 
 
+## Sample Test Inputs
+
+Use the following sample inputs to test the deployed IVR system:
+
+### Login
+- Username: `admin`
+- Password: `1234`
+
+### PNR Status
+- `1234567890`
+- `9876543210`
+
+### Train Schedule
+- `12952`
+- `12627`
+
+### Complaint Status
+- `cmp101`
+- `cmp202`
+
+### Cancellation Status
+- `can111`
+- `can222`
+
+### Refund Status
+- `ref555`
+- `ref777`
+
